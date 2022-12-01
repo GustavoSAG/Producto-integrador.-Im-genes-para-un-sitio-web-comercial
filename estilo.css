@@ -1,0 +1,428 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+/*Formato de pagina*/
+*{
+  align-content: center;
+  margin: 0;
+}
+body {
+  background: #D6C7C2 url("imagenes/portada.jpg") center top no-repeat;
+  background-size: 100%;
+  font-family: "Montserrat";
+  text-align: center; 
+  margin-top: 0;
+}
+/*Formato de Encabezado*/
+.encabezado{
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 15%;
+  color: white;
+  text-shadow:0 0 30px black, 0 0 70px black;
+}
+.encabezado h1, .encabezado-gallery h1{
+  font-size: 7vw;
+  margin-bottom: 0;
+}
+.encabezado h2, .encabezado-gallery h2{
+  font-size: 3vw;
+  margin-top: 5px;
+  margin-bottom: ;
+}
+/*Formato de Menu de navegación*/
+.menu{
+  background-color: #fff;
+  position: relative;
+  display: block;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.5vw;
+  text-shadow:.1em .1em 2em #c9e5f0;
+}
+.resaltado-menu{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  opacity: .5;
+}
+.resaltado-menu:hover, .pagina-actual, .galeria:hover{
+  color: black;
+  opacity: 1;
+  text-decoration: overline;
+}
+.galeria{
+  display: block;
+  position: absolute;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  opacity: .5;
+}
+/*Formato para pie de Pagina*/
+.pie-pagina{
+  background-color: #fff;
+  font-size: 1vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pagina-anterior, .pagina-siguiente{
+  text-decoration: none;
+  background-color: #AAAAAA;
+  color: white;
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  position: absolute;
+}
+.pagina-anterior{
+  left: 5%;
+}
+.pagina-siguiente{
+  right: 5%;
+}
+.pagina-siguiente:hover, .pagina-anterior:hover{
+  background-color: #374045;
+}
+/*Formato contenido "index"*/
+/*----------------------------------------------------------------------*/
+.info-index {
+  margin-top: 10%;
+  font-size: 2;
+}
+#imgmapa{
+  width: 30%;
+  height: 30%;
+  padding: 5%;
+  transition: transform 400ms ease-out;
+}
+.ubicacion{
+  padding: 5%;
+}
+.videos{
+  background-color: #fff;
+}
+.video{
+  width: 30vw;
+  height: 17.5vw;
+  padding: 5vw;
+  transition: transform 400ms ease-out;
+}
+.resaltado-info {
+  background-color: #fff;
+  color: black;
+  padding: 2%;
+}
+.resaltado-info:hover {
+  background-color: lightcyan;
+
+}
+/*formato para vinculos*/
+.link{
+  text-decoration: none;
+}
+/*Formato de grid Historia*/
+/*----------------------------------------------------------------------*/
+.historia-contenedor{
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 16px;
+  grid-column-gap: 20px;
+  background-color: #fff;
+  padding: 5%;
+}
+.historia-contenido{
+  padding: 10px;
+}
+.texto-historia{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.img-pasado1{
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+}
+.img-pasado2{
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+}
+.personajes-destacados{
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.video-historia{
+  grid-column: 1 / 3;
+  grid-row: 4;
+  padding: 10vw;
+  width: 65vw;
+  height: 37vw;
+}
+/*Formato de grid lugares*/
+/*----------------------------------------------------------------------*/
+.lugares-contenedor{
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  background-color: #fff;
+}
+.texto-sund-water, .texto-ocotes-moya{
+  padding: 10%;
+  font-size: 2vw;
+}
+.texto-sund-water{
+  grid-column: 1;
+  grid-row: 1;
+}
+.media-lugares{
+  transition: transform 400ms ease-out;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+.media-lugares:hover{
+  transform: scale(1.15);
+}
+.video-sun-water{
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  box-shadow: none;
+}
+.img-presa-1{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+}
+.img-presa-2{
+  width: 100%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.img-ocotes{
+  width: 100%;
+  grid-column: 2;
+  grid-row: 3;
+}
+.texto-ocotes-moya{
+  grid-column: 1;
+  grid-row: 3;
+}
+/*formato de grid gastronomia*/
+/*----------------------------------------------------------------------*/
+.Chile-contenedor{
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 33%;
+  grid-template-rows: 300px 500px;
+  grid-row-gap: 16px;
+  grid-column-gap: 0;
+  padding: 0;
+}
+.Chile-contenido{
+  padding: 10px;
+}
+.texto-chile-arbol{
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  background-color: #fff;
+  padding: 70px;
+}
+.img-salsa1{
+  width: 90%;
+  grid-column: 3;
+  grid-row: 1;
+}
+/*Contacto*/
+/*----------------------------------------------------------------------*/
+#contenido-reservacion{
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 0;
+}
+form button,
+form input {
+  width: 70%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+form button: hover{
+  background-color: red;
+}
+.form-container{
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.form-item-1{
+  grid-column: 1;
+}
+´.form-item-2{
+  grid-column: 2;
+}
+/*media---------------------------------------------------------------------------->*/
+@media only screen and (min-width: 800px){
+  .info-contenedor{
+    display: flex;
+  }
+}
+@media only screen and (max-width: 800px){
+  .video{
+    width: 60vw;
+    height: 35vw;
+  }
+  .lugares-contenedor{
+    display: inline-block;
+    padding: 0;
+  }
+  .media-lugares{
+    margin-bottom: 10%;
+    width: 80%;
+  }
+  .video-sun-water{
+    height: 45vw;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  }
+  .Chile-contenedor{
+    display: block;
+  }
+  .img-salsa1{
+    display: none;
+  }
+  .form-container{
+    display: block;
+  }
+  .form-item-1{
+    margin-bottom: 10vw;
+  }
+}
+/*Galería*/
+/*----------------------------------------------------------------------*/
+.Img-gallery{
+  transition: transform 400ms ease-out;
+  width: 90%;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+.Img-gallery:hover, .video:hover, #imgmapa:hover {
+  transform: scale(1.15);
+}
+@media only screen and (min-width: 800px){
+  .gallery {
+    margin-left: 4%;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+   .Img-gallery-1{
+    grid-column: 1;
+  } 
+  .Img-gallery-2{
+    grid-column: 2;
+  }
+  .Img-gallery-3{
+    grid-column: 3;
+  }
+  .Img-gallery-4{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .Img-gallery-5{
+    grid-column: 2;
+    grid-row: 2/4;
+  }
+  .Img-gallery-6{
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .Img-gallery-7{
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+  .Img-gallery-8{
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .Img-gallery-9{
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .Img-gallery-10{
+    grid-column: 3;
+    grid-row: 4;
+  }
+}
+@media only screen and (max-width: 800px){
+  .gallery {
+    margin-left: 4%;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+   .Img-gallery-1{
+    grid-column: 1;
+  } 
+  .Img-gallery-2{
+    grid-column: 2;
+  }
+  .Img-gallery-3{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .Img-gallery-4{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .Img-gallery-5{
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+  .Img-gallery-6{
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .Img-gallery-7{
+    grid-column: 2;
+    grid-row: 4/6;
+  }
+  .Img-gallery-8{
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .Img-gallery-9{
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .Img-gallery-10{
+    grid-column: 2;
+    grid-row: 7;
+  }
+}
+.fondo{
+  background: #D6C7C2;
+}
+.encabezado-gallery{
+  margin-top: 5%;
+  color: white;
+  text-shadow:0 0 30px black, 0 0 70px black;
+}
+.texto{
+  display: inline-block;
+  position: relative;
+  top: 29px;
+  padding: 5px 20px;
+  color: black;
+  background-color: #fff;
+  opacity: .7;
+  text-shadow:0 0 30px black, 0 0 70px black;
+}
